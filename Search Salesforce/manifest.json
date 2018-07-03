@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+
+  "name": "Search in Salesforce",
+  "description": "search String in Saleforce Orgs",
+  "version": "1.0",
+
+  "icons": {
+    "16": "/images/icons/logoIcon.png"
+  },
+
+  "browser_action": {
+    "default_icon": "/images/icons/logoIcon.png",
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": false
+  },
+
+  "permissions": [    
+          "https://*.force.com/*",
+          "https://*.salesforce.com/*",
+          "https://*.cloudforce.com/*",
+          "storage",
+          "notifications",
+          "contextMenus",
+          "activeTab",
+          "tabs",
+          "clipboardRead"
+        ]
+}
